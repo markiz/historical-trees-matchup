@@ -161,3 +161,5 @@ References:
 
 * [Version Management of Hierarchical Data in Relational Database](https://link.springer.com/chapter/10.1007/978-3-319-19024-2_28) — paper suggesting the design we ended up using
 * [DeltaNI: An Efficient Labeling Scheme for Versioned Hierarchical Data](https://db.in.tum.de/~finis/papers/DeltaNI.pdf) — an interesting paper that I ended up not using but is probably worth mentioning anyway
+
+Huge props to [Jim Menard](https://github.com/jimm) for proof reading this article.
