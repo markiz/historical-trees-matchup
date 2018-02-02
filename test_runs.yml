@@ -1,0 +1,32 @@
+- file: 01_parent_id_plus_timestamps.rb
+  databases:
+    - mysql2://mark@localhost/historic_trees
+    - postgresql://mark:mark@localhost/historic_trees
+  datasets:
+    - small_set.dat
+    - medium_set.dat
+    - large_set.dat
+- file: 02_parent_id_plus_timestamps_plus_snapshots.rb
+  databases:
+    - mysql2://mark@localhost/historic_trees
+  datasets:
+    - small_set.dat
+    - medium_set.dat
+    - large_set.dat
+  extra_args:
+    - 10000
+- file: 03_ltree_plus_timestamps.rb
+  databases:
+    - postgresql://mark:mark@localhost/historic_trees
+  datasets:
+    - small_set.dat
+    - medium_set.dat
+    - large_set.dat
+- file: 04_closure_tables_plus_timestamps.rb
+  databases:
+    - mysql2://mark@localhost/historic_trees
+    - postgresql://mark:mark@localhost/historic_trees
+  datasets:
+    - small_set.dat
+    - medium_set.dat
+    - large_set.dat
