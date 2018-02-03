@@ -57,7 +57,6 @@ class TestRunner
           result = instrumented(:descendants) { test_class.descendants(t.timestamp, t.arguments[:key]) }
 
           # descendants are allowed to be unsorted
-          binding.pry unless result.sort == t.result.sort
           raise "descendants test failed" unless result.sort == t.result.sort
         end
       end
