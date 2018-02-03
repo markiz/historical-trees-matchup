@@ -173,6 +173,7 @@ Well, I was wrong on all counts. In actuality, the parameters of my dataset gene
 * It deserves repeating that my tests were read-heavy, not write-heavy. Changing the read to write ratio WILL affect your results
 * All the tests were run in a single thread, cpu load for db floated around 30% (of a single core), and for the ruby process around 70% (of a single core)
 * Code could definitely be made faster and slicker, but that is left as an exercise to the reader
+* **NEVER** do time-travelling updates, as tempting as those might be. However well-meaning you are, you will break data integrity, cause time paradoxes and probably even destroy the Universe. Just don't.
 
 ## Conclusions
 
