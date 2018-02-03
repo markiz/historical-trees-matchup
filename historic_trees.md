@@ -16,26 +16,26 @@ For these benchmarks, I generated several datasets containing a mix of queries a
 
 ```
 events:
-  - timestamp: 1
-    type: add_node
-    key: 1
-    parent: null
-  - timestamp: 5
-    type: add_node
-    key: 2
-    parent: 1
-  <...>
+- timestamp: 1
+  type: add_node
+  key: 1
+  parent: null
+- timestamp: 5
+  type: add_node
+  key: 2
+  parent: 1
+<...>
 
 tests:
-	- timestamp: 3
-	  type: descendants
-	  key: 1
-	  result: []
-	- timestamp: 6
-	  type: descendants
-	  key: 1
-	  result: [2]
-	<...>
+- timestamp: 3
+  type: descendants
+  key: 1
+  result: []
+- timestamp: 6
+  type: descendants
+  key: 1
+  result: [2]
+<...>
 ```
 
 In this simple set we have two nodes: (1), the root, and (2), a child of (1). At timestamp 0 there are no nodes in the tree. At timestamp 2 there is only one, (1). At timestamp 6 there are both of them. As such, the test at timestamp 3 has no descendants for (1) and the test at timestamp 6 has one.
